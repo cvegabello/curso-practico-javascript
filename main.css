@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;  /* 1 rem - 10 px*/
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    text-align: left;
+    margin-left: 10px;
+    height: 22px; 
+    width: 100px;
+}
+
+label {
+    text-align: right;
+}
+
+button {
+    text-align: center;
+    margin-left: 10px;
+    height: 30px; 
+    width: 200px;
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1em;
+    padding: 1em;
+}
+
+.nested-gridLabelInput {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-top: 1em; 
+    justify-items:auto;
+}
+
+.nested-gridButtons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em;
+    justify-items: center;
+}
+
+
+
+.grid section {
+    background: rgb(213, 229, 230);
+    padding: 1rem;
+    justify-items: center;
+    border-radius: 4rem;
+    border: 0.2rem solid blue
+    
+}
+
+.grid section:hover {
+    border: 1px solid rgb(236, 70, 29);
+}
