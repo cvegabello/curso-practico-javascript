@@ -105,3 +105,6 @@ dist
 
 # Visual Studio code configuration
 .vscode
+
+# Iconos y graficos de la aplicacion
+iconos/

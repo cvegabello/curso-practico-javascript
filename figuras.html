@@ -9,21 +9,32 @@
 </head>
 <body>
 
-    <header>
-        <h1>
-            Figuras geométricas
-        </h1>
-        <p>Este es el primer taller del curso práctico de JavaScript</p>
+    <header class="flex-container">
+        <section class="flex-section">
+            <img
+                src="./iconos/shapes-solid.svg"
+                alt="Icono con figuras geometricas"
+            />
+            <h1>
+                Figuras geométricas
+            </h1>
+            
+            
+        </section>
+        <section class="flex-section">
+            <p>Este es el primer taller del curso práctico de JavaScript</p>
+        </section>
+       
     </header>
 
-    <section class="grid">
+    <section class="grid1">
 
-        <section>
+        <section class="grid1-cuadrado">
             <h2>Calcula el área y perímetro de un cuadrado</h2>
             <form >
                 <div class="nested-gridLabelInput">
                     <label for="InputCuadrado">
-                        Escribe cuánto mide cada lado de tu cuadrado:
+                        Cuánto mide el lado de tu cuadrado:
                     </label>
                     <input id="InputCuadrado" type="number" />
                 </div>
@@ -39,9 +50,10 @@
                 </div>
                 
             </form>
+            <h3 id="resCuadrado"></h3>
         </section>
 
-        <section>
+        <section class="grid1-circulo">
             <h2>Calcula el área y perímetro de un circulo</h2>
             <form>
                 <div class="nested-gridLabelInput">
@@ -61,29 +73,34 @@
                     </button>
                 </div>
             </form>
+            <h3 id="resCirculo"></h3>
         </section>
-    
-        <section class="grid-triangulo">
+            
+    </section>
+
+    <section class="grid2">
+
+        <section class="grid2-triangulo">
             <h2>Calcula el área y perímetro de un triangulo</h2>
             <form>
                 <div class="nested-gridLabelInputTriangulo">    
                     <label for="InputLado1Triangulo">
-                        Escribe cuánto mide el lado 1 del triangulo:
+                        Lado 1 del triangulo:
                     </label>
                     <input id="InputLado1Triangulo" type="number" />
         
                     <label for="InputLado2Triangulo">
-                        Escribe cuánto mide el lado 2 del triangulo:
+                        Lado 2 del triangulo:
                     </label>
                     <input id="InputLado2Triangulo" type="number" />
         
                     <label for="InputBaseTriangulo">
-                        Escribe cuánto mide la base del triangulo:
+                        Base del triangulo:
                     </label>
                     <input id="InputBaseTriangulo" type="number" />
         
                     <label for="InputAlturaTriangulo">
-                        Escribe cuánto mide la altura del triangulo:
+                        Altura del triangulo:
                     </label>
                     <input id="InputAlturaTriangulo" type="number" />
                 </div>
@@ -97,11 +114,14 @@
                     </button>
                 </div>
             </form>
+            <h3 id="resTriangulo"></h3>
         </section>
 
         
         
     </section>
+
+
     
     <script src="./figuras.js">
 
